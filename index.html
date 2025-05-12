@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple Meme - Mental Breakdown Collection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --apple-gray: #1c1c1e;
+      --apple-dark-gray: #ffffff;
+      --apple-light-gray: #3a3a3c;
+      --apple-blue: #0a84ff;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--apple-gray);
+      color: var(--apple-dark-gray);
+      scroll-behavior: smooth;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(28, 28, 30, 0.85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--apple-light-gray);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      z-index: 1000;
+      animation: fadeIn 1s ease-in-out;
+    }
+    nav a {
+      color: var(--apple-dark-gray);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--apple-blue);
+    }
+    header {
+      text-align: center;
+      padding: 10rem 2rem 4rem;
+      background: linear-gradient(to bottom, #2c2c2e, #1c1c1e);
+      animation: fadeIn 1s ease-in-out;
+      position: relative;
+      overflow: hidden;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      font-weight: 900;
+      color: var(--apple-dark-gray);
+    }
+    header h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #a1a1a6;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    section {
+      max-width: 800px;
+      margin: 6rem auto;
+      padding: 3rem;
+      background: #2c2c2e;
+      border-radius: 30px;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+      transform: translateY(50px);
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      position: relative;
+      z-index: 1;
+    }
+    section:nth-child(even) {
+      background-color: #3a3a3c;
+    }
+    section h3 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+    section h4 {
+      font-weight: 400;
+      color: #a1a1a6;
+      margin-bottom: 1.5rem;
+    }
+    section ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 2rem;
+    }
+    section ul li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    section ul li::before {
+      content: "✔️";
+      position: absolute;
+      left: 0;
+    }
+    blockquote {
+      font-style: italic;
+      color: #a1a1a6;
+      margin-top: 1rem;
+      border-left: 4px solid var(--apple-blue);
+      padding-left: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 4rem 2rem;
+      font-size: 1.1rem;
+      color: #a1a1a6;
+      background: #2c2c2e;
+      border-top: 1px solid var(--apple-light-gray);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    
+    /* Parallax effect for section background */
+    .parallax {
+      background: #333;
+      position: relative;
+      overflow: hidden;
+      height: 100vh;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      z-index: 0;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      0% {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    section {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    /* Parallax Scroll Effect */
+    .parallax-scroll {
+      height: 100vh;
+      background: #1c1c1e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#ican">iCan't</a>
+    <a href="#ipro">iProcrastinate</a>
+    <a href="#isleep">iSleep</a>
+    <a href="#ibreak">iNeedABreak</a>
+    <a href="#iover">iOverthink</a>
+    <a href="#izone">iZoneOut</a>
+  </nav>
+
+  <header>
+    <h1>🍏 Apple Presents</h1>
+    <h2>The Mental Breakdown Collection<br>Technologie f&uuml;r den Alltag – oder was davon noch &uuml;brig ist.</h2>
+  </header>
+
+  <!-- Parallax scrolling section without images -->
+  <section id="ican" class="parallax-scroll">
+    <div>
+      <h3>iCan&rsquo;t anymore 15 Pro Max Burnout Edition</h3>
+      <h4>Designed in California, powered by Koffein & Tr&auml;nen.</h4>
+      <ul>
+        <li>96 ge&ouml;ffnete Tabs</li>
+        <li>0 erledigte Aufgaben</li>
+        <li>Emotionale &Uuml;berhitzung serienm&auml;&szlig;ig</li>
+      </ul>
+      <blockquote>&bdquo;Es sieht teuer aus – weil es das ist. Emotional.&ldquo;</blockquote>
+    </div>
+  </section>
+
+  <section id="ipro" class="parallax-scroll">
+    <div>
+      <h3>iProcrastinate Ultra 16</h3>
+      <h4>Multitasking, aber nur mit Dingen, die du nicht tun solltest.</h4>
+      <ul>
+        <li>4K Display – ideal f&uuml;r YouTube statt Arbeit</li>
+        <li>Auto-Aufschieben-Reminder™: "Morgen vielleicht."</li>
+        <li>Fokus-Modus: Verliere dich in TikTok – ungest&ouml;rt</li>
+      </ul>
+      <blockquote>Erledige alles – au&szlig;er das, was du eigentlich sollst.</blockquote>
+    </div>
+  </section>
+
+  <section id="isleep" class="parallax-scroll">
+    <div>
+      <h3>iSleep Thru It All SE</h3>
+      <h4>Wecker? Mehr so eine freundliche Erinnerung.</h4>
+      <ul>
+        <li>37 Schlummermodi</li>
+        <li>Automatischer Schlaf, sobald du arbeiten willst</li>
+        <li>Traumrekorder erkennt: „Wieder verpasst.“</li>
+      </ul>
+      <blockquote>Gute Nacht. F&uuml;r alles andere ist eh zu sp&auml;t.</blockquote>
+    </div>
+  </section>
+
+  <section id="ibreak" class="parallax-scroll">
+    <div>
+      <h3>iNeedABreak 14 Mini</h3>
+      <h4>Klein. Kompakt. Komplett leer.</h4>
+      <ul>
+        <li>Akku-Laufzeit: so stabil wie deine mentale Gesundheit</li>
+        <li>Kein Ladeger&auml;t. Keine Energie. Keine Hoffnung.</li>
+        <li>Panik-Ladeanzeige bei 50%</li>
+      </ul>
+      <blockquote>Passt in jede Tasche – genau wie deine unterdr&uuml;ckten Emotionen.</blockquote>
+    </div>
+  </section>
+
+  <section id="iover" class="parallax-scroll">
+    <div>
+      <h3>iOverthink Max</h3>
+      <h4>H&ouml;rt alles. Denkt zu viel. Sagt nichts.</h4>
+      <ul>
+        <li>Integriertes Gedankenkarussell™</li>
+        <li>Siri antwortet mit: „Ich versteh dich auch nicht.“</li>
+        <li>Selbstzweifel in Stereo</li>
+      </ul>
+      <blockquote>Laut im Kopf. Leise im Leben.</blockquote>
+    </div>
+  </section>
+
+  <section id="izone" class="parallax-scroll">
+    <div>
+      <h3>🎧 iZoneOut Pods</h3>
+      <h4>Noise Cancelling f&uuml;r Realit&auml;t, Verantwortung & Gef&uuml;hle.</h4>
+      <ul>
+        <li>Blenden alles aus – vor allem den Druck</li>
+        <li>Optionaler Therapie-Modus (Beta)</li>
+        <li>Kompatibel mit Spotify-Heul-Playlist™</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    Jetzt vorbestellen – Verf&uuml;gbar: Psychisch leider nie. <br>
+    Preis: Deine letzten Nerven.
+  </footer>
+</body>
+</html>
